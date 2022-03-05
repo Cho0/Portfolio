@@ -5,7 +5,6 @@ const dotEl = document.querySelector('.dots');
 let timeoutID
 
 
-
 // --- Slider --- //
 function getNextPrev() {
   const activeSlide = document.querySelector('.slide.active');

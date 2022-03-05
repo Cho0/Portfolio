@@ -6,28 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
   <title>Choo's Portfolio </title>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 
 <body>
-  <div class="nav-container">
+  <div class="nav-container" id="home">
      <nav class="navbar">
        <h1 id="navbar-logo">Jason Choo;</h1>
        <p class="logo-2">Web Developer</p>
-       <div class="menu-toggle" id="mobile-menu">
-         <span class="bar"></span>
-         <span class="bar"></span>
-         <span class="bar"></span>
-       </div>
        <ul class="nav-menu">
-         <li><a href="#" class="nav-links">Home</a></li>
-         <li><a href="#" class="nav-links">About</a></li>
-         <li><a href="#" class="nav-links">Works</a></li>
-         <li><a href="#" class="nav-links">Contact</a></li>
+        
+         <div class="nav-border">
+         <li><a href="#home" class="nav-links">Home</a></li>
+         <li><a href="#projects" class="nav-links">Works</a></li>
+         <li><a href="#contact-nav" class="nav-links">Contact</a></li>
+         </div>
        </ul>
      </nav>
   </div>
 
-  <div class="about-section">
+  <div class="about-section" >
     <div class="about">
       <div class="profile">
         <img class="picture" src="./imgs/test-selfie.jpg">
@@ -35,7 +33,7 @@
       <div class="about-words">
         <p class="name">Jason Choo</p>
         <h3 class="bio">Junior Full-Stack Web Developer</h3>
-        <p class="description">Passionate about creating interactive and beautiful websites.</p>
+        <p class="description">Yes... Choo as in Choo Choo Train...</p>
       </div>
     </div>
 
@@ -52,7 +50,7 @@
 
 
   <h2 class="works">Projects;</h2>
-  <section>
+  <section id="projects">
     <div class="slider">
       <div class="slide slide-1 active">
         <h1>Pokedex</h1>
@@ -73,10 +71,53 @@
     </div>
     <div class="dots"></div>
   </section>
+  <div id="contact-nav">
+    <h2>Contact;</h2>
+    <p class="contact-desc">Hover and Click!</p>
+  </div>
+  
 
-</div>
+  <div class="contact">
+    
+      <ul class="contact-list">
+        
+        <li class="contact-list-item">
+          <a class="link" href="mailto:choojason7@gmail.com">
+          <img class="contact-icon" src="./imgs/icons/open.png">
+          <p id="text-hidden">Email: Choojason7@gmail.com</p>
+          </a>
+        </li>
+
+        <li class="contact-list-item">
+          <a class="link" href="tel:5104145123">
+          <img class="contact-icon" src="./imgs/icons/smartphone.png">
+          <p id="text-hidden">Phone: (510)-414-5123</p>
+          </a>
+        </li>
+        
+        <li class="contact-list-item">
+          <a class="link" href="https://www.linkedin.com/in/jason-c-700527129/">
+          <img class="contact-icon" src="./imgs/icons/linkedin.png">
+          <p id="text-hidden">LinkedIn</p>
+          </a>
+        </li>
+        
+        <li class="contact-list-item">
+          <a class="link" href="https://github.com/Cho0">
+          <img class="contact-icon" src="./imgs/icons/github.png">
+          <p id="text-hidden">GitHub</p>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+<footer>
+  <a href="https://www.flaticon.com/free-icons/mail" title="mail icons" class="flaticon">Mail icons created by Pixel perfect - Flaticon</a>
+</footer>
   
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <script src="./index.js"></script>
 </body>
+
 </html>
