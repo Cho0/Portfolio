@@ -18,6 +18,7 @@ section {
 
 body {
   background-image: linear-gradient(120deg, #70a4f7 0%, #c2e9fb 100%);
+  margin: 0;
 }
 /* --- nav bar --- */
 .nav-container {
@@ -37,6 +38,13 @@ body {
 .logo-2{
   transform: translateX(2%);
 }
+
+.nav-bar-container {
+  display: flex;
+  width: 100%;
+  margin: 0 50px;
+}
+
 .nav-menu {
  display: flex;
  flex-direction: column;
@@ -72,13 +80,13 @@ body {
   padding: 10%;
 }
 
-.nav-menu:hover li .nav-links {
+.nav-border:hover li .nav-links {
   transform: scale(1.5);
   opacity: 0.2;
   filter:blur(1px);
 }
 
-.nav-menu li .nav-links:hover {
+.nav-border li .nav-links:hover {
   transform: scale(2);
   opacity: 1;
   filter:blur(0);
@@ -342,6 +350,7 @@ h2 {
   color: black;
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-between;
   width: auto;
   font-size: 45px;
 }
@@ -354,6 +363,8 @@ h2 {
 .buttons div:hover{
   background-color: white;
 }
+
+
 
 /* --- dots --- */
 .dots{
