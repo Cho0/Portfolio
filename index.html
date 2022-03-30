@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
   <title>Choo's Portfolio </title>
-  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 
 <body>
@@ -14,14 +13,17 @@
      <nav class="navbar">
        <h1 id="navbar-logo">Jason Choo;</h1>
        <p class="logo-2">Web Developer</p>
-       <ul class="nav-menu">
-        
-         <div class="nav-border">
-         <li><a href="#home" class="nav-links">Home</a></li>
-         <li><a href="#projects" class="nav-links">Works</a></li>
-         <li><a href="#contact-nav" class="nav-links">Contact</a></li>
-         </div>
-       </ul>
+
+       <div class="nav-bar-container">
+        <ul class="nav-menu">
+          <div class="nav-border">
+          <li><a href="#home" class="nav-links">Home</a></li>
+          <li><a href="#projects" class="nav-links">Works</a></li>
+          <li><a href="#contact-nav" class="nav-links">Contact</a></li>
+          </div>
+        </ul>
+       </div>
+
      </nav>
   </div>
 
@@ -54,6 +56,7 @@
     <div class="slider">
       <div class="slide slide-1 active">
         <h1>Pokedex</h1>
+        <p class="case-study-button">Case Study</p>
       </div>
       <div class="slide slide-2">
         <h1>Movie API</h1>
@@ -65,9 +68,11 @@
         <h1>Meet App</h1>
       </div>
     </div>
-    <div class="buttons">
-      <div class="next"><ion-icon name="arrow-forward"></ion-icon></div>
-      <div class="prev"><ion-icon name="arrow-back"></ion-icon></div>
+    <div class="btn-container">
+      <div class="buttons">
+        <div class="next"><ion-icon name="arrow-forward"></ion-icon></div>
+        <div class="prev"><ion-icon name="arrow-back"></ion-icon></div>
+      </div>
     </div>
     <div class="dots"></div>
   </section>
@@ -96,14 +101,14 @@
         </li>
         
         <li class="contact-list-item">
-          <a class="link" href="https://www.linkedin.com/in/jason-c-700527129/">
+          <a class="link" href="https://www.linkedin.com/in/jason-c-700527129/" target="_blank">
           <img class="contact-icon" src="./imgs/icons/linkedin.png">
           <p id="text-hidden">LinkedIn</p>
           </a>
         </li>
         
         <li class="contact-list-item">
-          <a class="link" href="https://github.com/Cho0">
+          <a class="link" href="https://github.com/Cho0" target="_blank">
           <img class="contact-icon" src="./imgs/icons/github.png">
           <p id="text-hidden">GitHub</p>
           </a>
@@ -113,7 +118,7 @@
     </div>
   </div>
 <footer>
-  <a href="https://www.flaticon.com/free-icons/mail" title="mail icons" class="flaticon">Mail icons created by Pixel perfect - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/mail" title="mail icons" class="flaticon">Icons created by Pixel perfect - Flaticon</a>
 </footer>
   
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>

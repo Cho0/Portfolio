@@ -8,6 +8,7 @@ html {
   font-size: 20px;
   color: white;
   scroll-behavior: smooth;
+  
 }
 section {
   height: 100vh;
@@ -17,7 +18,7 @@ section {
 }
 
 body {
-  background-image: linear-gradient(120deg, #70a4f7 0%, #c2e9fb 100%);
+  background-image: linear-gradient(120deg, #65a0ff 0%, #c2e9fb 100%);
 }
 /* --- nav bar --- */
 .nav-container {
@@ -37,6 +38,11 @@ body {
 .logo-2{
   transform: translateX(2%);
 }
+
+.nav-bar-container {
+ 
+}
+
 .nav-menu {
  display: flex;
  flex-direction: column;
@@ -50,7 +56,7 @@ body {
 
 .nav-menu, li {
   list-style: none;
-  margin: 0 20px;
+  margin: 0;
   transition: 0.5%;
 }
 
@@ -72,13 +78,16 @@ body {
   padding: 10%;
 }
 
-.nav-menu:hover li .nav-links {
+.nav-border {
+  transform: translateX(-5%);
+}
+.nav-border:hover li .nav-links {
   transform: scale(1.5);
   opacity: 0.2;
   filter:blur(1px);
 }
 
-.nav-menu li .nav-links:hover {
+.nav-border li .nav-links:hover {
   transform: scale(2);
   opacity: 1;
   filter:blur(0);
@@ -331,17 +340,32 @@ h2 {
 .slide-4{
   background-image: url(./imgs/MeetApp.png);
 }
+
+.case-study-button {
+  height: 50px;
+  width: auto;
+  margin: 5px;
+  border: 2px solid #65a0ff;
+  border-radius: 5px;
+  text-align: center;
+}
+
 /* --- Buttons --- */
 
-.buttons{
+.btn-container {
   position: absolute;
-  z-index: 5;
+  margin-left: auto;
+  margin-right: auto;
   bottom: 50%;
-  right: 50%;
+  width: 100%;
+  z-index: 6;
+}
+.buttons{
   height: auto;
-  color: black;
+  color: rgb(0, 0, 0);
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-between;
   width: auto;
   font-size: 45px;
 }
@@ -349,10 +373,11 @@ h2 {
   cursor: pointer;
   pointer-events: all;
   padding: 15px;
-  background-color: rgba(0, 0, 0, 0.24);
+  background-color: rgba(255, 255, 255, 0.247);
 }
 .buttons div:hover{
   background-color: white;
+  transition: ease-in
 }
 
 /* --- dots --- */
