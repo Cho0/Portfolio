@@ -36,11 +36,7 @@ body {
 }
 
 .logo-2{
-  transform: translateX(2%);
-}
-
-.nav-bar-container {
- 
+ margin-left: 40px;
 }
 
 .nav-menu {
@@ -103,6 +99,7 @@ body {
   margin: 1%;
   padding: 1%;
 }
+
 .picture {
   height: 400px;
   width: auto;
@@ -111,8 +108,21 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
-  transform: translateY(-25%);
+  transform: translateY(-25%); 
 }
+.picture-2 {
+  height: 25%;
+  width: 25%;
+  float: right;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.picture-3 {
+  height: 25%;
+  width: 25%;
+
+}
+
 .about-words{
   transform: translateY(-25%);
 }
@@ -121,7 +131,6 @@ body {
   color: white;
   font-size: 40px;
   width: 100%;
- 
 }
 
 .name {
@@ -147,9 +156,11 @@ h2 {
   text-align: center;
   transform: translateY(-50px);
 }
+
 .contact-list {
   text-align: center;
   transition: .5s;
+  width: 100%
   
 }
 .contact-list:hover .contact-list-item {
@@ -185,10 +196,15 @@ h2 {
 .contact-list-item:hover #text-hidden {
   display: block;
 }
+.contact-list-border{
+  width:100%
+}
 
 .contact-list-item {
   transition: 0.5s;
-  padding: 10px;
+  padding: 1%;
+  text-decoration: none;
+
 }
 
 .link {
@@ -341,13 +357,38 @@ h2 {
   background-image: url(./imgs/MeetApp.png);
 }
 
+.slide-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.case-study-clickable{
+  color: #fff;
+}
+.case-study-clickable:visited {
+  text-decoration: none;
+}
 .case-study-button {
   height: 50px;
-  width: auto;
-  margin: 5px;
-  border: 2px solid #65a0ff;
+  width: 120px;
   border-radius: 5px;
+  background-color: #5588dbe0;
+  transition: .5s;
   text-align: center;
+}
+.case-study-text{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(25%, 25%);
+  transform: translate(-50%, 25%);
+}
+.case-study-button:hover {
+  transition: .5s;
+  background-color: #5588db8e;
+  cursor: pointer;
 }
 
 /* --- Buttons --- */
@@ -475,4 +516,30 @@ h2 {
   font-size: 20px;
   color: white;
   text-decoration: none;
+}
+
+/* About me page */
+
+.btn-about-me {
+  display: flex;
+  justify-content: center;
+}
+.about-me-bio {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  width: 100%;
+}
+.about-me-description {
+  margin: 1%;
+}
+.about-me-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+.description-container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
 }

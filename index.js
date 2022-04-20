@@ -2,6 +2,7 @@ const slides = Array.from(document.querySelectorAll('.slide'));
 const slider = document.querySelector('.slider');
 const buttons = document.querySelectorAll('.buttons div');
 const dotEl = document.querySelector('.dots');
+const caseStudy = document.querySelector('.case-study-button');
 let timeoutID
 
 
@@ -141,3 +142,15 @@ function autoLoop() {
 getActiveDot();
 clickDot();
 autoLoop();
+
+// -- reveal about me -- //
+
+// function showHideAbout() {
+//   var showHide = document.getElementById("about-me");
+//   if (showHide.style.display === "none") {
+//     showHide.style.display = "block";
+//   } else {
+//     showHide.style.display = "none";
+//   }
+// }
+
