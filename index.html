@@ -11,32 +11,51 @@
 <body>
   <div class="nav-container" id="home">
      <nav class="navbar">
-       <h1 id="navbar-logo">Jason Choo;</h1>
-       <p class="logo-2">Web Developer</p>
-
-       <div class="nav-bar-container">
+        <h1 id="navbar-logo">Jason Choo;</h1>
+        <p class="logo-2">Web Developer</p>
+       </div>
+       
         <ul class="nav-menu">
           <div class="nav-border">
           <li><a href="#home" class="nav-links">Home</a></li>
+          <li><a href="#about-me" class="nav-links">About Me</a></li>
           <li><a href="#projects" class="nav-links">Works</a></li>
           <li><a href="#contact-nav" class="nav-links">Contact</a></li>
+          
           </div>
         </ul>
        </div>
-
      </nav>
   </div>
 
   <div class="about-section" >
     <div class="about">
       <div class="profile">
-        <img class="picture" src="./imgs/test-selfie.jpg">
+          
+            <img class="picture" src="./imgs/1V3A4479.jpg">
+         
       </div>
       <div class="about-words">
         <p class="name">Jason Choo</p>
         <h3 class="bio">Junior Full-Stack Web Developer</h3>
         <p class="description">Yes... Choo as in Choo Choo Train...</p>
       </div>
+      <!-- <button class="btn-about-me" onclick="showHideAbout()">About me</button> -->
+      <div id="about-me" class="about-me-container">
+        <div class="description-container">
+           <h3>About Me:</h3>
+         <p class="about-me-description">Technology has always been at the forefront of my life. I loved computer building and learning about them ever since I was a little boy. And from a young age, I always wanted to do something in the tech field. However, I was surrounded by art and had been an artist for quite a while now due to my family’s obsession with it. And because of my background in art, I am an excellent communicator with other artists. I have also developed my skills as a full-stack web developer and I am excited to continue to develop and deepen my understanding of code.</p>
+           <h3>Some History:</h3>
+         <p class="about-me-description">Before starting my coding journey, I was an Overwatch Semi-Pro, playing and winning against some of the best players around the world. I ranked in the top 500 in the North American region and I would play in high-level tournaments with my team. While I am retired now, I still do work as a coach for my team and lower-ranked players.</p>
+           <h3>My Hobbies:</h3>
+         <p class="about-me-description">Outside of coding and painting, I enjoy gaming of all types, tennis, and eating food that has way too many calories in them.</p>  
+           <h3>Current Projects:</h3>
+         <p class="about-me-description">I’m learning more about coding for mobile devices and creating a chat app.</p>
+        </div>
+        <img class="picture-2" src="./imgs/1V3A4518.jpg">
+      </div>      
+      
+    </div>
     </div>
 
     <div class="mouse_scroll">
@@ -55,19 +74,53 @@
   <section id="projects">
     <div class="slider">
       <div class="slide slide-1 active">
-        <h1>Pokedex</h1>
-        <p class="case-study-button">Case Study</p>
+        <div class="slide-info">
+          <h1>Pokedex</h1>
+            <a class="case-study-clickable" href='../case-studies/pokemon-case-study.html'>
+              <div class="case-study-button" >
+                <p class="case-study-text">Case Study</p>
+              </div>
+             </a>
+          
+        </div>
+        
+        
       </div>
+
       <div class="slide slide-2">
+        <div class="slide-info">
         <h1>Movie API</h1>
-      </div>
-      <div class="slide slide-3 " >
-        <h1>Movie Client Side</h1>
-      </div>
-      <div class="slide slide-4 ">
-        <h1>Meet App</h1>
+        <a class="case-study-clickable" href='../case-studies/pokemon-case-study.html'>
+          <div class="case-study-button" >
+            <p class="case-study-text">Case Study</p>
+          </div>
+        </a>
       </div>
     </div>
+
+      <div class="slide slide-3 " >
+        <div class="slide-info">
+        <h1>Movie Client Side</h1>
+          <a class="case-study-clickable" href='../case-studies/pokemon-case-study.html'>
+            <div class="case-study-button" >
+              <p class="case-study-text">Case Study</p>
+           </div>
+          </a>
+      </div>
+    </div>
+
+      <div class="slide slide-4 ">
+        <div class="slide-info">
+        <h1>Meet App</h1>
+          <a class="case-study-clickable" href='../case-studies/pokemon-case-study.html'>
+            <div class="case-study-button" >
+              <p class="case-study-text">Case Study</p>
+            </div>
+          </a>
+      </div>
+    </div>
+    </div>
+  
     <div class="btn-container">
       <div class="buttons">
         <div class="next"><ion-icon name="arrow-forward"></ion-icon></div>
@@ -85,36 +138,39 @@
   <div class="contact">
     
       <ul class="contact-list">
-        
-        <li class="contact-list-item">
-          <a class="link" href="mailto:choojason7@gmail.com">
-          <img class="contact-icon" src="./imgs/icons/open.png">
-          <p id="text-hidden">Email: Choojason7@gmail.com</p>
-          </a>
-        </li>
+        <div class="contact-list-border">
 
-        <li class="contact-list-item">
-          <a class="link" href="tel:5104145123">
-          <img class="contact-icon" src="./imgs/icons/smartphone.png">
-          <p id="text-hidden">Phone: (510)-414-5123</p>
-          </a>
-        </li>
-        
-        <li class="contact-list-item">
-          <a class="link" href="https://www.linkedin.com/in/jason-c-700527129/" target="_blank">
-          <img class="contact-icon" src="./imgs/icons/linkedin.png">
-          <p id="text-hidden">LinkedIn</p>
-          </a>
-        </li>
-        
-        <li class="contact-list-item">
-          <a class="link" href="https://github.com/Cho0" target="_blank">
-          <img class="contact-icon" src="./imgs/icons/github.png">
-          <p id="text-hidden">GitHub</p>
-          </a>
-        </li>
+          <li class="contact-list-item">
+            <a class="link" href="mailto:choojason7@gmail.com">
+            <img class="contact-icon" src="./imgs/icons/open.png">
+            <p id="text-hidden">Email: Choojason7@gmail.com</p>
+            </a>
+          </li>
+
+          <li class="contact-list-item">
+            <a class="link" href="tel:5104145123">
+            <img class="contact-icon" src="./imgs/icons/smartphone.png">
+            <p id="text-hidden">Phone: (510)-414-5123</p>
+            </a>
+          </li>
+          
+          <li class="contact-list-item">
+            <a class="link" href="https://www.linkedin.com/in/jason-c-700527129/" target="_blank">
+            <img class="contact-icon" src="./imgs/icons/linkedin.png">
+            <p id="text-hidden">LinkedIn</p>
+            </a>
+          </li>
+          
+          <li class="contact-list-item">
+            <a class="link" href="https://github.com/Cho0" target="_blank">
+            <img class="contact-icon" src="./imgs/icons/github.png">
+            <p id="text-hidden">GitHub</p>
+            </a>
+          </li>
+      </div>
         
       </ul>
+    </div>
     </div>
   </div>
 <footer>
