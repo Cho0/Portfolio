@@ -71,7 +71,7 @@ function getNextSlide() {
   next.style.transform = 'translate(0)';
   getPosition();
   getActiveDot();
-  autoLoop();
+  // autoLoop();
 }
 
 function getPrevSilde() {
@@ -90,7 +90,7 @@ function getPrevSilde() {
   prev.style.transform = 'translateX(0)'
   getPosition();
   getActiveDot();
-  autoLoop();
+  // autoLoop();
 }
 
 // --- dots --- //
@@ -130,7 +130,7 @@ function getDotSlide(index) {
   slides[index].classList.add('active');
   getPosition();
   getActiveDot();
-  autoLoop();
+  // autoLoop();
 }
 
 function autoLoop() {
@@ -141,7 +141,7 @@ function autoLoop() {
 
 getActiveDot();
 clickDot();
-autoLoop();
+// autoLoop();
 
 // -- reveal about me -- //
 
