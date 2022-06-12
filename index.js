@@ -164,8 +164,8 @@ const text1Options = [
 const text2Options = [
   "Technology has always been at the forefront of my life. I have loved learning about computers and building them ever since I was young. I have always wanted to do something in the tech field from a young age. However, I grew up an artist because my family loves art. Due to my background in art, I found that I communicate well with other artists. I have developed my skills as a full-stack web developer, and I am excited to continue growing and deepening my understanding of code.",
   "Before starting my coding journey, I was an Overwatch Semi-Pro, playing and winning against some of the best players worldwide. My personal rank was in the top 500 in the North American region, and I would play in high-level tournaments with my team. While I am retired now, I still work as a coach for my team and lower-ranked players.",
-  "I enjoy gaming, sports like tennis, tennis, and eating food with too many calories outside of coding and painting.",
-  "I’m learning more about coding for mobile devices and creating a chat app."
+  "I enjoy gaming, sports like tennis, and eating food with too many calories. Coding and painting too, of course.",
+  "I am creating an app that allows users to input a budget and the app will give you a travel plan. The plan will include plane tickets, Airbnb costs, food costs (option to turn off), and tourist attractions. The idea is to give people an easier time figuring out their options for where they could go."
 ];
 
 const colorOptions = ["#EBB9D2", "#FE9968", "#7FE0EB", "#6CE5B1"];

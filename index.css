@@ -284,6 +284,7 @@ h2 {
   z-index: 101;
   position: absolute;
   transform: translate(140px, 0);
+  z-index: 0;
 }
 .anim-next {
   pointer-events: none;
@@ -600,6 +601,9 @@ h2 {
 .slide-4{
   background-image: url(./imgs/MeetApp.png);
 }
+.slide-darken {
+  background-color: rgba(0, 0, 0, 0.521);
+}
 
 .slide-info {
   display: flex;
@@ -626,15 +630,33 @@ h2 {
   transition: .5s;
   text-align: center;
 }
-/* .case-study-text{
+.case-study-text-wrapper{
+  display: flex;
+  flex-direction: column;
   
-} */
+}
 .case-study-button:hover {
   transition: .5s;
   background-color: #5588db8e;
   cursor: pointer;
 }
-
+ .case {
+  width: 40%;
+  margin-left: 1%;
+  margin-top: .5%;
+  transform: translateY(20%);
+ }
+ .case2 {
+  width: 40%;
+  margin-top: .5%;
+  transform: translate(150%, -20%);
+ }
+ .case-study-title{
+  transform: translateY(40%);
+ }
+ .approach-p-2 {
+  margin-top: .5%;
+ }
 .github-clickable{
   color: #fff;
   text-decoration: none;
