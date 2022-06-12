@@ -19,7 +19,7 @@
           <div class="nav-border">
           <li><a href="#home" class="nav-links">Home</a></li>
           <li><a href="#about-me" class="nav-links">About Me</a></li>
-          <li><a href="#projects" class="nav-links">Works</a></li>
+          <li><a href="#projects" class="nav-links">Projects</a></li>
           <li><a href="#contact-nav" class="nav-links">Contact</a></li>
           <li><a href="./imgs/JasonChoo-WebDeveloper.pdf" download="JasonChoo-WebDeveloper.pdf" class="nav-links">Resume</a></li>
           </div>
@@ -40,23 +40,19 @@
         <h3 class="bio">Junior Full-Stack Web Developer</h3>
         <p class="description">Yes... Choo as in Choo Choo Train...</p>
       </div>
-      <!-- <button class="btn-about-me" onclick="showHideAbout()">About me</button> -->
-      <div id="about-me" class="about-me-container">
-        <div class="description-container">
-           <h3>About Me:</h3>
-         <p class="about-me-description">Technology has always been at the forefront of my life. I have loved learning about computers and building them ever since I was young. I have always wanted to do something in the tech field from a young age. However, I grew up an artist because my family loves art. Due to my background in art, I found that I communicate well with other artists. I have developed my skills as a full-stack web developer, and I am excited to continue growing and deepening my understanding of code.</p>
-           <h3>Semi-Pro Career:</h3>
-         <p class="about-me-description">Before starting my coding journey, I was an Overwatch Semi-Pro, playing and winning against some of the best players worldwide. My personal rank was in the top 500 in the North American region, and I would play in high-level tournaments with my team. While I am retired now, I still work as a coach for my team and lower-ranked players.</p>
-           <h3>My Hobbies:</h3>
-         <p class="about-me-description">I enjoy gaming, sports like tennis, and eating food with too many calories outside of coding and painting.</p>  
-           <h3>Current Projects:</h3>
-         <p class="about-me-description">I’m learning more about coding for mobile devices and creating a chat app.</p>
+    </div>
+
+    <div id="about-carousel-wrapper" id="about-me">
+      <div id="menu">
+        <div id="active-text">
+          <span id="active-text1" data-previous-text="" data-next-text=""></span>
+          <span id="active-text2" data-previous-text="" data-next-text=""></span>
         </div>
-        <img class="picture-2" src="./imgs/1V3A4518.jpg">
-      </div>      
-      
-    </div>
-    </div>
+        <button id="previous-option"></button>
+        <button id="next-option"></button>
+      </div>
+      <div id="image"></div>
+  </div>
 
     <div class="mouse_scroll">
       <div class="mouse">
@@ -68,7 +64,6 @@
         <span class="scroll_arrow three"></span>
       </div>
     </div> 
-
 
   <h2 class="works">Projects</h2>
   <section id="projects">
@@ -95,11 +90,11 @@
         <div class="slide-info">
           <h1>Movie API</h1>
           <div class="button-container">
-            <a class="case-study-clickable" href='../case-studies/pokemon-case-study.html'>
+            <!-- <a class="case-study-clickable" href='../case-studies/pokemon-case-study.html'>
             <div class="case-study-button" >
               <p class="case-study-text">Case Study</p>
             </div>
-          </a>
+          </a> -->
           <a class="github-clickable" href="https://github.com/Cho0/movie_api">
             <div class="github-button">
               <p class="github-text">GitHub</p>
@@ -113,13 +108,11 @@
         <div class="slide-info">
           <h1>Movie Client Side</h1>
           <div class="button-container">
-
-         
-            <a class="case-study-clickable" href='../case-studies/pokemon-case-study.html'>
+            <!-- <a class="case-study-clickable" href='../case-studies/pokemon-case-study.html'>
               <div class="case-study-button" >
                 <p class="case-study-text">Case Study</p>
               </div>
-            </a>
+            </a> -->
             <a class="github-clickable" href="https://github.com/Cho0/myFlix-client">
               <div class="github-button">
                 <p class="github-text">GitHub</p>
@@ -133,12 +126,11 @@
         <div class="slide-info">
         <h1>Meet App</h1>
         <div class="button-container">
-          <a class="case-study-clickable" href='../case-studies/pokemon-case-study.html'>
+          <!-- <a class="case-study-clickable" href='../case-studies/pokemon-case-study.html'>
             <div class="case-study-button" >
               <p class="case-study-text">Case Study</p>
-              
             </div>
-          </a>
+          </a> -->
           <a class="github-clickable" href="https://github.com/Cho0/MeetApp">
             <div class="github-button">
               <p class="github-text">GitHub</p>
@@ -159,7 +151,6 @@
   </section>
   <div id="contact-nav">
     <h2>Contact</h2>
-    <p class="contact-desc">Hover and Click!</p>
   </div>
   
 

@@ -154,3 +154,85 @@ clickDot();
 //   }
 // }
 
+const text1Options = [
+  "About me:",
+  "Semi-Pro Career:",
+  "Hobbies:",
+  "Current Projects:"
+];
+
+const text2Options = [
+  "Technology has always been at the forefront of my life. I have loved learning about computers and building them ever since I was young. I have always wanted to do something in the tech field from a young age. However, I grew up an artist because my family loves art. Due to my background in art, I found that I communicate well with other artists. I have developed my skills as a full-stack web developer, and I am excited to continue growing and deepening my understanding of code.",
+  "Before starting my coding journey, I was an Overwatch Semi-Pro, playing and winning against some of the best players worldwide. My personal rank was in the top 500 in the North American region, and I would play in high-level tournaments with my team. While I am retired now, I still work as a coach for my team and lower-ranked players.",
+  "I enjoy gaming, sports like tennis, and eating food with too many calories. Coding and painting too, of course.",
+  "I am creating an app that allows users to input a budget and the app will give you a travel plan. The plan will include plane tickets, Airbnb costs, food costs (option to turn off), and tourist attractions. The idea is to give people an easier time figuring out their options for where they could go."
+];
+
+const colorOptions = ["#EBB9D2", "#FE9968", "#7FE0EB", "#6CE5B1"];
+
+const imageOptions = [
+  "https://i.postimg.cc/3wnYycYg/1V3A4518.jpg",
+  "https://i.postimg.cc/Hk0pmLNv/F7897-CC7-56-C5-4-B4-C-9-FE1-CA981-CD22650.jpg",
+  "https://i.postimg.cc/tTJyFN48/1V3A4540.jpg",
+  "https://i.postimg.cc/NMCsnPng/1-BBA1630-1954-47-C1-AEDF-D1-C7224-DE096.jpg",
+]
+
+var i = 0;
+
+const currentOptionText1 = document.getElementById("active-text1");
+const currentOptionText2 = document.getElementById("active-text2");
+const currentOptionImage = document.getElementById("image");
+const carousel = document.getElementById("about-carousel-wrapper");
+const mainMenu = document.getElementById("menu");
+const optionPrevious = document.getElementById("previous-option");
+const optionNext = document.getElementById("next-option");
+
+currentOptionText1.innerText = text1Options[i];
+currentOptionText2.innerText = text2Options[i];
+currentOptionImage.style.backgroundImage = "url(" + imageOptions[i] + ")";
+mainMenu.style.background = colorOptions[i];
+
+optionPrevious.onclick = function () {
+  i = i + 1;
+  i = i % text1Options.length;
+  currentOptionText1.dataset.nextText = text1Options[i];
+
+  currentOptionText2.dataset.nextTest = text2Options[i];
+
+  mainMenu.style.background = colorOptions[i];
+  carousel.classList.add("anim-next");
+
+  setTimeout(() => {
+    currentOptionImage.style.backgroundImage = "url(" + imageOptions[i] + ")";
+  }, 455);
+
+  setTimeout(() => {
+    currentOptionText1.innerText = text1Options[i];
+    currentOptionText2.innerText = text2Options[i];
+    carousel.classList.remove("anim-next");
+  }, 650)
+}
+
+optionNext.onclick = function () {
+  if (i === 0) {
+    i = text1Options.length;
+  }
+  i = i - 1;
+  currentOptionText1.dataset.previousText = text1Options[i];
+
+  currentOptionText2.dataset.previousText = text2Options[i];
+
+  mainMenu.style.background = colorOptions[i];
+  carousel.classList.add("anim-previous");
+
+  setTimeout(() => {
+    currentOptionImage.style.backgroundImage = "url(" + imageOptions[i] + ")";
+  }, 455);
+
+  setTimeout(() => {
+    currentOptionText1.innerText = text1Options[i];
+    currentOptionText2.innerText = text2Options[i];
+    carousel.classList.remove("anim-previous");
+  }, 650);
+}
+
